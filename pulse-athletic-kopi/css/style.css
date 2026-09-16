@@ -122,15 +122,23 @@ transform: scale(1.03);
   object-fit: cover;
   z-index: 0;
  opacity: 1;
+ filter: saturate(0.7);
 }
 
 /* Overlay ovenpå videoen */
 
-.hero-overlay {
+
+ .hero-overlay {
   position: absolute;
   inset: 0;
-  background:  linear-gradient(0deg, rgba(218, 239, 195, 0.7) 5%, rgba(89, 89, 87, 0.3) 60%, rgba(246, 246, 240, 0.15) 100%);
   z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 247, 220, 0.92) 0%,
+    rgba(247, 247, 220, 0.72) 38%,
+    rgba(247, 247, 220, 0.28) 70%,
+    rgba(247, 247, 220, 0.12) 100%
+  );
 }
 
 /* Boksen med alt teksten */
@@ -157,22 +165,24 @@ transform: scale(1.03);
 .hero-content .pulse-text {
   font-size: 17px;
   color: var(--darkgrey);
-  margin-bottom: 50px;
-  line-height: 2.5;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  
 }
 
 .hero-content .price {
   font-size: 28px;
   margin-bottom: 20px;
   line-height: 2;
-  color: #035213;
+  color: #0e8425;
   font-weight: 800;
 }
 
 .hero-content h1,
 .hero-content .pulse-text,
 .hero-content .price {
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  
+  font-style: bold;
 }
 
 /* Billedet med de tre ure */
@@ -194,11 +204,11 @@ transform: scale(1.03);
 /*CTA KNAP*/
 
 #cta-button {
-  background-color: var(--green);
+  background:linear-gradient(90deg, var(--gradientgreen1) 0%, var(--gradientgreen2) 49.52%, var(--gradientgreen1) 100%);
   border: none;
   border-radius: 20px;
   padding: 0; 
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 
